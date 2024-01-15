@@ -6,7 +6,7 @@ import com.example.tasksapp.data.AppDataBase
 
 class TaskAppAplication : Application() {
 
-    lateinit var dataBase: AppDataBase
+    private lateinit var dataBase: AppDataBase
 
 
     override fun onCreate() {
@@ -17,4 +17,8 @@ class TaskAppAplication : Application() {
             AppDataBase::class.java, "taskbeats-database"
         ).build()
     }
-}
+
+        fun getAppDataBase(): AppDataBase {
+            return dataBase
+        }
+    }
