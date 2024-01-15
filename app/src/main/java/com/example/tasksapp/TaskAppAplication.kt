@@ -4,9 +4,9 @@ import android.app.Application
 import androidx.room.Room
 import com.example.tasksapp.data.AppDataBase
 
-class TaskAppAplication : Application(){
+class TaskAppAplication : Application() {
 
-    lateinit var dataBase : AppDataBase
+    lateinit var dataBase: AppDataBase
 
 
     override fun onCreate() {
